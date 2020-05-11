@@ -28,6 +28,7 @@ docker
 
 ```
 (to check if we have docker installed)
+<br>
 3- clone git by:<br>
 
 

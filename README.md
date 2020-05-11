@@ -55,7 +55,7 @@ sudo apt-get install docker-compose
 
 ```bash
 
-docker <br>
+docker 
 
 docker-compose 
 

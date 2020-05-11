@@ -39,18 +39,47 @@ pip3 install -r requirements.txt
 pip3 freeze
 
 9-Check if we have docker images:<br>
+
+```bash
+
 sudo docker images
 
+```
 10-Build docker image : <br>
+
+
+```bash
+
 sudo docker-compose build
 
+```
+
 11-check again docker images : <br>
+
+```bash
+
 sudo docker images
 
+```
+
 12-To run this image:<br>
+
+```bash
+
 sudo docker-compose up --build -d
+
+```
 
 13-Remember to open ports from "Security Groups":<br>
 
-port 8000, 8080 , ssh
+```bash
 
+port 8000, 8080 
+```
+
+On a side note, we can use vim editor by using<br>
+
+```bash
+
+sudo vim fliename
+```

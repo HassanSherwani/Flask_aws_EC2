@@ -8,7 +8,7 @@ Basic deployment of flask application on EC2 instance with Docker.
 1- start EC2 instance:<br>
 ```bash
 
-ssh -i flask.pem ubuntu@**IP ADDRESS**<br>
+ssh -i flask.pem ubuntu@IP ADDRESS
 
 ```
 
@@ -18,7 +18,7 @@ ssh -i flask.pem ubuntu@**IP ADDRESS**<br>
 
 ```bash
 
-sudo apt-get update <br>
+sudo apt-get update 
 
 ```
 

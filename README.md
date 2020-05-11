@@ -2,42 +2,88 @@
 
 Basic deployment of flask application on EC2 instance with Docker.
 
-# How to run
-
-- Run pip3 install -r requirements.txt
-- sudo docker-compose up --build -d
 
 # steps to follow
 
-1- ssh -i flask.pem ubuntu@**IP ADDRESS**<br>
+1- start EC2 instance:<br>
+```bash
+
+ssh -i flask.pem ubuntu@**IP ADDRESS**<br>
+
+```
+
 2-Once in instance, add dependencies: <br>
 
+
+
+```bash
+
 sudo apt-get update <br>
-docker (to check if we have docker installed)
 
-3- clone git by:<br>
+```
 
-git clone (url)
-
-4-Install docker using: <br>
-
-sudo apt-get install docker-compose
-
-5- check again docker image: <br>
+```bash
 
 docker
 
+```
+(to check if we have docker installed)
+3- clone git by:<br>
+
+
+
+```bash
+
+git clone (url)
+
+```
+
+4-Install docker using: <br>
+
+
+
+```bash
+
+sudo apt-get install docker-compose
+
+```
+
+5- check again docker image: <br>
+
+
+
+```bash
+
+docker <br>
+
 docker-compose 
 
+```
+
 6- Install pip : <br>
+
+
+```bash
+
 sudo apt install python3-pip
 
+```
+
 7- Run requirements.txt : <br>
+
+```bash
+
 pip3 install -r requirements.txt
 
+```
+
 8- Check if all needed dependencies are there<br>
+
+```bash
+
 pip3 freeze
 
+```
 9-Check if we have docker images:<br>
 
 ```bash

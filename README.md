@@ -117,7 +117,15 @@ sudo docker images
 
 ```bash
 
-sudo docker-compose up --build -d
+sudo docker-compose up --build (for building image for 1st time)
+
+OR
+
+sudo docker-compose up --build -d (to run docker image and also keep terminal console in function)
+
+OR 
+
+sudo docker-compose up (only for running docker image)
 
 ```
 
@@ -134,3 +142,6 @@ On a side note, we can use vim editor by using<br>
 
 sudo vim fliename
 ```
+14- To Install AWS CLI v2 & configure IAM role: <br>
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"

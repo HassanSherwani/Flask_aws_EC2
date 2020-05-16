@@ -26,6 +26,10 @@ sudo apt-get update
 
 docker
 
+OR 
+
+docker-compose
+
 ```
 (to check if we have docker installed)
 <br>
@@ -65,7 +69,7 @@ docker-compose
 
 ```
 
-6- Install pip : <br>
+6- Install pip3 : <br>
 
 
 ```bash
@@ -74,7 +78,15 @@ sudo apt install python3-pip
 
 ```
 
-7- Run requirements.txt : <br>
+7- Check if all needed dependencies are there<br>
+
+```bash
+
+pip3 freeze
+
+```
+
+8- Run requirements.txt : <br>
 
 ```bash
 
@@ -82,21 +94,28 @@ pip3 install -r requirements.txt
 
 ```
 
-8- Check if all needed dependencies are there<br>
+
+9- Install unzip command :<br>
 
 ```bash
-
-pip3 freeze
-
+sudo apt install unzip
 ```
-9-Check if we have docker images:<br>
+
+10-Install gnupg2 pass in case of fargate implementation <br>
+
+```bash
+sudo apt install gnupg2 pass
+```
+
+
+11-Check if we have docker images:<br>
 
 ```bash
 
 sudo docker images
 
 ```
-10-Build docker image : <br>
+12-Build docker image : <br>
 
 
 ```bash
@@ -105,7 +124,7 @@ sudo docker-compose build
 
 ```
 
-11-check again docker images : <br>
+13-check again docker images : <br>
 
 ```bash
 
@@ -113,11 +132,11 @@ sudo docker images
 
 ```
 
-12-To run this image:<br>
+14-To run this image:<br>
 
 ```bash
 
-sudo docker-compose up --build (for building image for 1st time)
+sudo docker-compose up --build (for building image for 1st time and running at same time)
 
 OR
 
@@ -128,20 +147,32 @@ OR
 sudo docker-compose up (only for running docker image)
 
 ```
+15- Check current running images by:<br>
+```bash
+sudo docker ps
 
-13-Remember to open ports from "Security Groups":<br>
+```
+16-Remember to open ports from "Security Groups":<br>
 
 ```bash
 
-port 8000, 8080 
+port 8000, 80
 ```
 
-On a side note, we can use vim editor by using<br>
+17- Associate Elastic IP
+
+18- Setup SSL certificate into your AWS EC2 instance i.e using https with elastic IP
+
+- ^On a side note, we can use vim editor by using<br>
 
 ```bash
 
 sudo vim fliename
 ```
-14- To Install AWS CLI v2 & configure IAM role: <br>
+- ^ for deleting docker image: <br>
+
+https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+19- To Install AWS CLI v2 & configure IAM role
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
